@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    color: white;
+    background-color: black;
+}
+
+/* FULL SCREEN STARFIELD BACKGROUND */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    display: block;
+}
+
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #c084f5;
+}
+
+.toggle {
+    background: #6c43d4;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+.projects-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(20, 20, 60, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px #0077ff88;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Project buttons (categories) */
+.project-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.project-menu button {
+    background: #0047ab;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 8px #0047ab88;
+}
+
+.project-menu button:hover, .project-menu button.active {
+    background: #0080ff;
+    box-shadow: 0 0 15px #0080ffcc;
+}
+
+/* Project detail content */
+.project-detail {
+    background: #112244;
+    border-radius: 8px;
+    padding: 15px 20px;
+    min-height: 300px;
+    box-shadow: inset 0 0 20px #0055ff44;
+}
+
+/* Responsive iframe */
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 6px;
+}
+  
+  
+
+
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+/* Twinkling stars canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  display: block;
+}
+
+header {
+  background-color: transparent;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #c084f5;
+}
+
+.toggle {
+  background: #6c43d4;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  background: transparent;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-text .name {
+  color: #c084f5;
+  font-weight: bold;
+}
+
+.glow-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.glow-list li {
+  margin: 5px 0;
+  padding: 5px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 5px;
+}
+
+blockquote {
+  margin-top: 15px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.about-image img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* SKILLS SECTION */
+.skill-section, .tools-section {
+  text-align: center;
+  padding: 40px 20px;
+  background: transparent;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.title span {
+  color: #c084f5;
+}
+
+.skills-grid, .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-card, .tool-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover, .tool-card:hover {
+  transform: scale(1.1);
+}
+
+.skill-card img, .tool-card img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Typewriter cursor */
+.typewriter {
+  color: #c084f5;
+  font-weight: bold;
+}

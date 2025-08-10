@@ -1,0 +1,139 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    color: white;
+    background-color: black;
+}
+
+/* FULL SCREEN STARFIELD BACKGROUND */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    display: block;
+}
+
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #c084f5;
+}
+
+.toggle {
+    background: #6c43d4;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.hero h1 .highlight {
+    color: #c084f5;
+}
+
+.hero .illustration img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.highlight {
+    color: #c084f5;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.social {
+    text-align: center;
+    padding: 30px;
+}
+
+.social .icons a {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social .icons a:hover {
+    color: #c084f5;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Transparent backgrounds for sections */
+.hero,
+.about,
+.social,
+footer {
+    background-color: transparent !important;
+}
+
+/* Typing animation styling */
+#typing {
+    font-size: 24px;
+    color: #c084f5;
+}
+
+.cursor {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}

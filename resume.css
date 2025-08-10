@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* Star background */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Navbar */
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+  display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    font-size: 20px;
+}
+
+nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #c084f5;
+}
+.toggle {
+    background: #6c43d4;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Button styles */
+.btn-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-view, .btn-download {
+  background: #6c43d4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-view:hover, .btn-download:hover {
+  background: #8b5cf6;
+}
+
+/* PDF container */
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.pdf-container iframe {
+  width: 80%;
+  height: 80vh;
+  background: white;
+  border-radius: 6px;
+  border:2px solid #ccc;
+  box-shadow:0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.pdf-container iframe::-webkit-scrollbar {
+  display: none;
+}
+
+.pdf-container iframe {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
