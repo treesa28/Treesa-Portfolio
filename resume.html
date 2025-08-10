@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Portfolio</title>
+  <link rel="stylesheet" href="./CSS/resume.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Stars background -->
+  <canvas id="starfield"></canvas>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="project.html"><i class="fa fa-code"></i> Projects</a></li>
+        <li><a href="resume.html"><i class="fa fa-file"></i> Resume</a></li>
+        <li><a href="#"><i class="fa fa-blog"></i> Blogs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Centered "View Resume" button -->
+  <div class="btn-container">
+    <button id="viewResumeBtn" class="btn-view">
+      <i class="fa fa-eye"></i> View Resume
+    </button>
+    <button id="viewCoverbtn" class="btn-view">
+        <i class="fa fa-eye"></i>View Cover Letter
+    </button>
+  </div>
+
+  <!-- Hidden Download button -->
+  <div class="btn-container" id="downloadBtnContainer" style="display: none;">
+    <a href="./assets/Treesa_developer.jpg" class="btn-download" download>
+      <i class="fa fa-download"></i><br> Download CV
+    </a>
+    <br>
+     <a href="./assets/" class="btn-download" download>
+      <i class="fa fa-download"></i><br> Download Cover letter
+    </a>
+  </div>
+
+  <!-- Hidden PDF viewer -->
+  <div class="pdf-container" id="pdfContainer" style="display: none;">
+    <iframe src="./assets/Treesa_developer.jpg" frameborder="0"></iframe>
+  </div>
+
+  <div class="pdf-container">
+     <iframe src="./assets/Treesa _CoverLetter.jpg" frameborder="0"></iframe>
+  </div>
+
+  <script src="./JS/resume.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treesa Monteiro - Portfolio</title>
+    <link rel="stylesheet" href="./CSS/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Twinkling stars background -->
+    <canvas id="starfield"></canvas>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="./about.html"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="./project.html"><i class="fa fa-code"></i> Projects</a></li>
+                <li><a href="./resume.html"><i class="fa fa-file"></i> Resume</a></li>
+                <li><a href="#"><i class="fa fa-blog"></i> Blogs</a></li>
+                <li><button class="toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="projects-container">
+    <h1>My Projects</h1>
+    <div class="project-menu">
+      <button class="active" onclick="showProject('powerbi')">Power BI</button>
+      <button onclick="showProject('java')">Java</button>
+      <button onclick="showProject('python')">Python</button>
+      <button onclick="showProject('design')">Design</button>
+    </div>
+
+    <div id="project-detail" class="project-detail">
+      <!-- Project content will be injected here -->
+    </div>
+  </div>
+
+     <footer>
+        <p>Designed and Developed by Treesa Monteiro</p>
+        <p>Copyright © 2025</p>
+    </footer>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>
+
+
